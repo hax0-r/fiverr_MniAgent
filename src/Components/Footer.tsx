@@ -5,10 +5,10 @@ import logo from "../assets/logo.png"
 const Footer = () => {
   return (
     <div>
-      <footer className="w-full mt-20 ">
+      <footer className="w-full md:mt-20 mt-10 ">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           {/*Grid*/}
-          <div className="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 gap-3 md:gap-8 py-10 max-sm:max-w-sm max-sm:mx-auto gap-y-8">
+          <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-3 md:gap-8 py-10 max-sm:max-w-sm max-sm:mx-auto gap-y-8">
             <div className="col-span-full mb-10 lg:col-span-2 lg:mb-0">
               <Link
                 to="/"
@@ -52,7 +52,7 @@ const Footer = () => {
                     to="javascript:;"
                     className=" text-gray-600 hover:text-gray-900 transition-all duration-500"
                   >
-                    Services
+                    Features
                   </Link>
                 </li>
                 <li>
@@ -65,44 +65,7 @@ const Footer = () => {
                 </li>
               </ul>
             </div>
-            {/*End Col*/}
-            <div className="lg:mx-auto text-left ">
-              <h4 className="text-lg text-gray-900 font-medium mb-7">Top Services</h4>
-              <ul className="text-sm  transition-all duration-500">
-                <li className="mb-6">
-                  <Link
-                    to="javascript:;"
-                    className="text-gray-600 hover:text-gray-900 transition-all duration-500"
-                  >
-                    Web App
-                  </Link>
-                </li>
-                <li className="mb-6">
-                  <Link
-                    to="javascript:;"
-                    className=" text-gray-600 hover:text-gray-900 transition-all duration-500"
-                  >
-                    Mobile Application
-                  </Link>
-                </li>
-                <li className="mb-6">
-                  <Link
-                    to="javascript:;"
-                    className=" text-gray-600 hover:text-gray-900 transition-all duration-500"
-                  >
-                    UI/UX Desgin
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to="javascript:;"
-                    className=" text-gray-600 hover:text-gray-900 transition-all duration-500"
-                  >
-                    Software Development
-                  </Link>
-                </li>
-              </ul>
-            </div>
+
             {/*End Col*/}
             <div className="lg:mx-auto text-left">
               <h4 className="text-lg text-gray-900 font-medium mb-7">Resources</h4>
@@ -120,61 +83,7 @@ const Footer = () => {
                     to="javascript:;"
                     className=" text-gray-600 hover:text-gray-900 transition-all duration-500"
                   >
-                    Quick Start
-                  </Link>
-                </li>
-                <li className="mb-6">
-                  <Link
-                    to="javascript:;"
-                    className=" text-gray-600 hover:text-gray-900 transition-all duration-500"
-                  >
-                    Documentation
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to="javascript:;"
-                    className=" text-gray-600 hover:text-gray-900 transition-all duration-500"
-                  >
-                    User Guide
-                  </Link>
-                </li>
-              </ul>
-            </div>
-            {/*End Col*/}
-            <div className="lg:mx-auto text-left">
-              <h4 className="text-lg text-gray-900 font-medium mb-7">Blogs</h4>
-              <ul className="text-sm  transition-all duration-500">
-                <li className="mb-6">
-                  <Link
-                    to="javascript:;"
-                    className="text-gray-600 hover:text-gray-900 transition-all duration-500"
-                  >
-                    News
-                  </Link>
-                </li>
-                <li className="mb-6">
-                  <Link
-                    to="javascript:;"
-                    className=" text-gray-600 hover:text-gray-900 transition-all duration-500"
-                  >
-                    Tips &amp; Tricks
-                  </Link>
-                </li>
-                <li className="mb-6">
-                  <Link
-                    to="javascript:;"
-                    className=" text-gray-600 hover:text-gray-900 transition-all duration-500"
-                  >
-                    New Updates
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    to="javascript:;"
-                    className=" text-gray-600 hover:text-gray-900 transition-all duration-500"
-                  >
-                    Events
+                    Privacy Policy
                   </Link>
                 </li>
               </ul>
