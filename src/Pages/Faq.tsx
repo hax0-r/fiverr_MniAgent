@@ -68,8 +68,8 @@ const Faq: React.FC = () => {
                         <Accordion
                             title=" Is patient data secure with Omni Agent?"
                             content={<p>Absolutely. Omni Agent follows industry-standard encryption and compliance practices (like HIPAA) to ensure all patient data is handled with the highest level of security and confidentiality.</p>}
-                            isOpen={openTab === 0}
-                            onClick={() => toggleTab(0)}
+                            isOpen={openTab === 3}
+                            onClick={() => toggleTab(3)}
                         />
                         <Accordion
                             title="Where is the data stored?"
@@ -78,8 +78,8 @@ const Faq: React.FC = () => {
                                     Data is stored securely in the cloud, using trusted servers with advanced security protocols.
                                 </p>
                             }
-                            isOpen={openTab === 2}
-                            onClick={() => toggleTab(2)}
+                            isOpen={openTab === 4}
+                            onClick={() => toggleTab(4)}
                         />
                         <Accordion
                             title="Can clinics control data access?"
@@ -88,8 +88,8 @@ const Faq: React.FC = () => {
                                     Yes! You decide who can access patient data, and we provide customizable permission settings for different staff roles.
                                 </p>
                             }
-                            isOpen={openTab === 2}
-                            onClick={() => toggleTab(2)}
+                            isOpen={openTab === 5}
+                            onClick={() => toggleTab(5)}
                         />
                     </ul>
                     <div className="md:max-w-[45%] w-full md:text-start text-center">
@@ -108,8 +108,8 @@ const Faq: React.FC = () => {
                         <Accordion
                             title="What happens if a patient calls outside office hours?"
                             content={<p>Omni Agent answers calls 24/7! It can schedule appointments, answer common questions, or direct patients to emergency services if needed.                                </p>}
-                            isOpen={openTab === 0}
-                            onClick={() => toggleTab(0)}
+                            isOpen={openTab === 6}
+                            onClick={() => toggleTab(6)}
                         />
                         <Accordion
                             title="Can Omni Agent handle rescheduling and cancellations?"
@@ -118,8 +118,8 @@ const Faq: React.FC = () => {
                                     <p>Of course. Patients can confirm, reschedule, or cancel appointments through the voice bot — all without involving your staff.</p>
                                 </>
                             }
-                            isOpen={openTab === 1}
-                            onClick={() => toggleTab(1)}
+                            isOpen={openTab === 7}
+                            onClick={() => toggleTab(7)}
                         />
                         <Accordion
                             title="Does the AI sound robotic?"
@@ -128,8 +128,8 @@ const Faq: React.FC = () => {
                                     Not at all. Omni Agent uses advanced natural language processing to speak in a warm, conversational tone. Most patients won’t even realize they’re speaking to AI!
                                 </p>
                             }
-                            isOpen={openTab === 2}
-                            onClick={() => toggleTab(2)}
+                            isOpen={openTab === 8}
+                            onClick={() => toggleTab(8)}
                         />
                     </ul>
                 </div>
@@ -141,8 +141,8 @@ const Faq: React.FC = () => {
                         <Accordion
                             title=" Can we customize Omni Agent's responses?"
                             content={<p>Yes! We work with you to tailor responses, greetings, and workflows to match your clinic’s tone and processes.                                </p>}
-                            isOpen={openTab === 0}
-                            onClick={() => toggleTab(0)}
+                            isOpen={openTab === 9}
+                            onClick={() => toggleTab(9)}
                         />
                         <Accordion
                             title="Does Omni Agent improve over time?"
@@ -151,8 +151,8 @@ const Faq: React.FC = () => {
                                     Definitely. The AI learns from interactions, refining its responses and handling edge cases more effectively the longer it runs.
                                 </p>
                             }
-                            isOpen={openTab === 2}
-                            onClick={() => toggleTab(2)}
+                            isOpen={openTab === 10}
+                            onClick={() => toggleTab(10)}
                         />
                     </ul>
                     <div className="md:max-w-[45%] w-full md:text-start text-center">
@@ -171,8 +171,8 @@ const Faq: React.FC = () => {
                         <Accordion
                             title="How much does Omni Agent cost?"
                             content={<p>Pricing depends on your clinic’s size, call volume, and customization needs. We offer flexible plans to suit different requirements — reach out to us for a personalized quote.                                </p>}
-                            isOpen={openTab === 0}
-                            onClick={() => toggleTab(0)}
+                            isOpen={openTab === 11}
+                            onClick={() => toggleTab(11)}
                         />
                         <Accordion
                             title="What kind of support is available?"
@@ -186,8 +186,8 @@ const Faq: React.FC = () => {
                                     </ul>
                                 </>
                             }
-                            isOpen={openTab === 1}
-                            onClick={() => toggleTab(1)}
+                            isOpen={openTab === 12}
+                            onClick={() => toggleTab(12)}
                         />
                     </ul>
                 </div>
