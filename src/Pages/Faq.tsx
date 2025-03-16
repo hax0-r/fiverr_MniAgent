@@ -11,10 +11,15 @@ const Faq: React.FC = () => {
 
     return (
         <main className="p-5 bg-white">
-            <h2 className="text-4xl md:mt-20 mt-10 font-semibold text-zinc-800 text-center">Frequently Asked Questions</h2>
-            <p className="text-center mt-3 text-zinc-600">
-                Have a question? We have answers! If you can't find what you're looking for, feel free to <Link to="/contact-us" className="text-blue-500 hover:underline">contact us</Link>.
-            </p>
+            <section className="py-14 lg:py-24 relative z-0 bg-blue-50">
+                <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative text-center">
+                    <h1 className="max-w-3xl mx-auto font-bold text-2xl  text-gray-900 mb-5 md:text-4xl md:leading-normal">
+                        Frequently Asked Questions
+                    </h1>
+                    <p className="max-w-2xl mx-auto text-center text-base font-normal leading-7 text-gray-500 mb-9">
+                        Have a question? We have answers! If you can't find what you're looking for, feel free to <Link to="/contact-us" className="text-blue-500 hover:underline">contact us</Link>.</p>
+                </div>
+            </section>
             <div className="flex justify-center items-start mt-16">
                 <div className="w-full max-w-7xl my-1 flex items-center justify-between md:flex-row flex-col md:gap-10 gap-7">
                     <div className="md:max-w-[45%] w-full md:text-start text-center">

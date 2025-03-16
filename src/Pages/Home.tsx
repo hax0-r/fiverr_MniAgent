@@ -12,6 +12,7 @@ const Home = () => {
       <div>
 
         <div className="max-w-7xl my-5 w-full mx-auto p-5 lg:flex-row flex-col min-h-[calc(100vh-100px)] flex items-center justify-center md:gap-20 gap-14">
+          <div className="w-full h-screen absolute top-0 left-0 bg-blue-50 -z-10"></div>
           <div className="lg:max-w-[60%] w-full">
 
             <h1 className="font-semibold md:text-2xl text-lg text-zinc-900">Supercharge Your Front Desk with Omni Agent

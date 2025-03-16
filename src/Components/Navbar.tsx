@@ -30,11 +30,11 @@ const Navbar = () => {
           <IoClose onClick={() => setNavbar(false)} className='absolute top-6 right-7 text-3xl' />
           <img src={logo} alt="logo" className='h-12' />
           <ul className='flex mt-8 flex-col space-y-7'>
-            <li><NavLink to={"/"}>Home</NavLink></li>
-            <li><NavLink to={"/features "}>Features</NavLink></li>
-            <li><NavLink className="text-nowrap" to={"/About-us"}>About Us</NavLink></li>
-            <li><NavLink to={"/faq"}>FAQ</NavLink></li>
-            <li><NavLink className="text-nowrap" to={"/contact-us"}>Contact us</NavLink></li>
+            <li><NavLink onClick={() => setNavbar(false)} to={"/"}>Home</NavLink></li>
+            <li><NavLink onClick={() => setNavbar(false)} to={"/features"}>Features</NavLink></li>
+            <li><NavLink onClick={() => setNavbar(false)} className="text-nowrap" to={"/About-us"}>About Us</NavLink></li>
+            <li><NavLink onClick={() => setNavbar(false)} to={"/faq"}>FAQ</NavLink></li>
+            <li><NavLink onClick={() => setNavbar(false)} className="text-nowrap" to={"/contact-us"}>Contact us</NavLink></li>
           </ul>
         </div>
       </div>
