@@ -1,4 +1,7 @@
 import ProjectManager from '../assets/Project-Manager.jpg'
+import img1 from '../assets/img1.jpg'
+import img2 from '../assets/contactUs.avif'
+import img3 from '../assets/contact.png'
 
 const About = () => {
     return (
@@ -29,7 +32,7 @@ const About = () => {
 
             <div className="max-w-7xl my-5 w-full mx-auto p-5 lg:flex-row flex-col-reverse md:mt-32 mt-10 flex items-center justify-center md:gap-20 gap-14">
                 <div className="lg:max-w-[50%] w-full">
-                    <img src={ProjectManager} alt="" />
+                    <img src={img1} alt="" />
                 </div>
                 <div className="lg:max-w-[50%] w-full md:text-start text-center">
                     <h1 className="font-semibold md:text-4xl text-3xl text-zinc-900">Our Mission</h1>
@@ -51,13 +54,13 @@ const About = () => {
                     </ul>
                 </div>
                 <div className="lg:max-w-[50%] w-full">
-                    <img src={ProjectManager} alt="" />
+                    <img src={img2} alt="" />
                 </div>
             </div>
 
-            <div className="max-w-7xl my-5 w-full mx-auto p-5 lg:flex-row flex-col-reverse md:mt-32 mt-10 flex items-center justify-center md:gap-20 gap-14">
-                <div className="lg:max-w-[50%] w-full">
-                    <img src={ProjectManager} alt="" />
+            <div className="max-w-7xl my-5 w-full mx-auto p-5 lg:flex-row flex-col-reverse md:mt-24 mt-10 flex items-center justify-center md:gap-20 gap-14">
+                <div className="lg:max-w-[40%] w-full">
+                    <img src={img3} alt="" />
                 </div>
                 <div className="lg:max-w-[50%] w-full text-zinc-600 md:text-start text-center">
                     <h1 className="font-semibold md:text-4xl text-3xl text-zinc-900">Our Ethos</h1>
