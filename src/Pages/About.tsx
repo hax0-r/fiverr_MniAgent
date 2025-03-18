@@ -8,11 +8,11 @@ const About = () => {
         <div>
             <section className="py-14 lg:py-24 relative z-0 bg-blue-50">
                 <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative text-center">
-                    <h1 className="max-w-3xl mx-auto font-bold text-2xl  text-gray-900 mb-5 md:text-4xl md:leading-normal">
+                    <h1 className="max-w-3xl mx-auto slidein [--slidein-delay:300ms] opacity-0 font-bold text-2xl  text-gray-900 mb-5 md:text-4xl md:leading-normal">
                         Revolutionizing Healthcare with AI-Powered
                         <span className="text-[#004aad]"> Voice Assistance </span>
                     </h1>
-                    <p className="max-w-2xl mx-auto text-center text-base font-normal leading-7 text-gray-500 mb-9">
+                    <p className="max-w-2xl mx-auto slidein [--slidein-delay:500ms] opacity-0 text-center text-base font-normal leading-7 text-gray-500 mb-9">
                         Transforming patient communication, streamlining clinic operations, and enhancing care with human-like voice AI.</p>
                 </div>
             </section>

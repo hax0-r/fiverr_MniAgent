@@ -10,21 +10,19 @@ const Home = () => {
   return (
     <>
       <div>
-
         <div className="max-w-7xl my-5 w-full mx-auto p-5 lg:flex-row flex-col min-h-[calc(100vh-100px)] flex items-center justify-center md:gap-20 gap-14">
           <div className="w-full h-screen absolute top-0 left-0 bg-blue-50 -z-10"></div>
           <div className="lg:max-w-[60%] w-full">
-
-            <h1 className="font-semibold md:text-2xl text-lg text-zinc-900">Supercharge Your Front Desk with Omni Agent
+            <h1 className="font-semibold slidein [--slidein-delay:300ms] opacity-0 capitalize md:text-3xl leading-tight text-lg text-zinc-900">Supercharge Your Front Desk with Omni Agent
               Automate Patient Calls. Reduce Support Costs. Elevate Care.
             </h1>
-            <p className="text-zinc-600 md:mt-7 mt-4">Managing endless patient calls and messages for routine queries drains your team’s time and leads to long wait times, frustrated patients, and staff burnout. Omni Agent changes that.
+            <p className="text-zinc-600 md:mt-7 slidein [--slidein-delay:500ms] opacity-0 mt-4">Managing endless patient calls and messages for routine queries drains your team’s time and leads to long wait times, frustrated patients, and staff burnout. Omni Agent changes that.
             </p>
             {/* <p className="text-zinc-600 mt-3">
               Our AI-powered Voice & Text assistant handles appointment scheduling, FAQs, and reminders — freeing your staff to focus on patient care. Reduce operational costs, streamline communication, and deliver 24/7 support without adding to your payroll.
             </p> */}
 
-            <ul className="grid md:grid-cols-2 grid-cols-1 gap-5 mt-8 text-zinc-800">
+            <ul className="grid md:grid-cols-2 grid-cols-1 gap-5 mt-8 text-zinc-800 slidein [--slidein-delay:700ms] opacity-0">
               <li className="flex items-center text-sm gap-1.5"><CiCircleCheck className="text-lg text-[#0c4fae]" /> Instant Response to Patient Inquiries</li>
               <li className="flex items-center text-sm gap-1.5"><CiCircleCheck className="text-lg text-[#0c4fae]" /> 24/7 Availability — No Missed Calls
               </li>
@@ -32,10 +30,10 @@ const Home = () => {
               <li className="flex items-center text-sm gap-1.5"><CiCircleCheck className="text-lg text-[#0c4fae]" /> Cost-Effective Workflow Automation</li>
             </ul>
 
-            <h4 className="font-medium mt-8 text-lg mb-2 text-zinc-900">Ready to revolutionize patient interactions?</h4>
-            <p className="text-zinc-800"><Link to={"/"} className="font-medium underline text-zinc-900 hover:no-underline">Book a Demo Today</Link> and see how Omni Agent transforms your practice.</p>
+            <h4 className="font-medium mt-8 text-lg mb-2 text-zinc-900 slidein [--slidein-delay:800ms] opacity-0">Ready to revolutionize patient interactions?</h4>
+            <p className="text-zinc-800 slidein [--slidein-delay:800ms] opacity-0"><Link to={"/"} className="font-medium underline text-zinc-900 hover:no-underline">Book a Demo Today</Link> and see how Omni Agent transforms your practice.</p>
           </div>
-          <div className="lg:max-w-[40%] w-full">
+          <div className="lg:max-w-[40%] w-full slidein [--slidein-delay:300ms] opacity-0">
             <img src={mainImg} alt="" />
           </div>
         </div>

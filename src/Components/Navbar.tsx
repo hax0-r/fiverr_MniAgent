@@ -10,7 +10,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className='max-w-7xl w-full mx-auto p-5 flex items-center justify-between'>
+      <div className='max-w-7xl w-full mx-auto p-5 flex items-center justify-between slidein [--slidein-delay:300ms] opacity-0'>
         <img src={logo} alt="logo" className='md:h-12 h-9' />
         <ul className='md:flex hidden items-center space-x-10'>
           <li><NavLink to={"/"}>Home</NavLink></li>

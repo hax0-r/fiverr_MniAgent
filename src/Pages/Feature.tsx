@@ -1,7 +1,29 @@
 import { useState } from "react";
 import Accordion from "../Components/Accordion"
-import img from '../assets/img2.jpg'
-import img2 from '../assets/img3.png'
+import img2 from '../assets/contact.png'
+
+const features = [
+    {
+        title: "Effortless Voice Scheduling",
+        description:
+            "Omni Agent handles appointment scheduling with AI precision, reducing your team's workload.",
+    },
+    {
+        title: "Seamless Appointment Management",
+        description:
+            "Patients can book, reschedule, or cancel appointments anytime, without waiting on hold.",
+    },
+    {
+        title: "Automatic Reminders & No-Show Prevention",
+        description:
+            "Omni Agent sends voice or text reminders to reduce missed appointments.",
+    },
+    {
+        title: "Post-Visit Follow-Ups",
+        description:
+            "Schedules follow-ups, shares medication instructions, and collects feedback.",
+    },
+];
 
 const Feature = () => {
     const [openTab, setOpenTab] = useState<number | null>(null);
@@ -14,82 +36,28 @@ const Feature = () => {
         <div>
             <section className="py-14 lg:py-24 relative z-0 bg-blue-50">
                 <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative text-center">
-                    <h1 className="max-w-2xl mx-auto font-bold text-2xl  text-gray-900 mb-5 md:text-4xl md:leading-normal">
+                    <h1 className="max-w-2xl mx-auto slidein [--slidein-delay:300ms] opacity-0 font-bold text-2xl  text-gray-900 mb-5 md:text-4xl md:leading-normal">
                         Effortless Voice Scheduling
                         <span className="text-[#004aad]"> Available 24/7 </span>
                     </h1>
-                    <p className="max-w-3xl mx-auto text-center text-base font-normal leading-7 text-gray-500 mb-9">
+                    <p className="max-w-3xl mx-auto text-center slidein [--slidein-delay:500ms] opacity-0 text-base font-normal leading-7 text-gray-500 mb-9">
                         Our AI-powered voice bot handles every aspect of appointment scheduling with precision and ease, reducing your team’s workload and creating a frictionless experience for patients</p>
                 </div>
             </section>
-            <div className="flex p-5 justify-center items-start md:mt-16 mt-8">
-                <div className="w-full max-w-7xl my-1 flex items-center justify-between md:flex-row flex-col md:gap-10 gap-7">
-                    <ul className="flex md:p-7 flex-col rounded-lg md:max-w-[55%] w-full overflow-hidden">
-                        <Accordion
-                            title="Effortless Voice Scheduling — Available 24/7"
-                            content={<p>Imagine a front desk assistant that never sleeps — that’s Omni Agent. Our AI-powered voice bot handles every aspect of appointment scheduling with precision and ease, reducing your team’s workload and creating a frictionless experience for patients. Whether it’s booking a new consultation or rescheduling a follow-up, Omni Agent guides patients step-by-step, just like a human assistant would.
-                            </p>}
-                            isOpen={openTab === 0}
-                            onClick={() => toggleTab(0)}
-                        />
-                        <Accordion
-                            title="Seamless Appointment Management:"
-                            content={
-                                <>
-                                    <p> Patients can call anytime, day or night, to book, reschedule, or cancel appointments without waiting on hold. The bot gathers all necessary details, confirms availability, and locks in the slot — all within seconds.
-                                        <br /><br />
-                                        "Would you like to book a follow-up with Dr. Smith this Friday at 3 PM?"
-                                    </p>
-                                </>
-                            }
-                            isOpen={openTab === 1}
-                            onClick={() => toggleTab(1)}
-                        />
-                        <Accordion
-                            title="Automatic Reminders & No-Show Prevention:"
-                            content={
-                                <p>
-                                    Missed appointments are a thing of the past. Omni Agent sends friendly voice reminders or text messages to patients before their scheduled visits, confirming attendance or offering to reschedule if needed.
-                                    <br /><br />
-                                    “Hi, this is a reminder for your appointment tomorrow at 10 AM. Press 1 to confirm, or 2 to reschedule.”
-                                </p>
-                            }
-                            isOpen={openTab === 2}
-                            onClick={() => toggleTab(2)}
-                        />
-                        <Accordion
-                            title="Post-Visit Follow-Ups:"
-                            content={
-                                <p>
-                                    After consultations, Omni Agent helps keep patients on track. It can schedule follow-ups, share medication instructions, and even send out feedback surveys to improve clinic operations.
-                                    <br /><br />
-                                    “Your next check-up is due in two weeks. Would you like me to book that for you?”
-                                </p>
-                            }
-                            isOpen={openTab === 3}
-                            onClick={() => toggleTab(3)}
-                        />
-                        <Accordion
-                            title="Always On, Always Available:"
-                            content={
-                                <p>
-                                    With Omni Agent, patients get instant assistance 24/7 — even outside of clinic hours or during peak times. And since it handles unlimited interactions simultaneously, you never have to worry about overflowing voicemails or long wait times again.
-                                    <br /><br />
-                                    Let me know if you want me to tweak anything or add more! 🚀
-                                </p>
-                            }
-                            isOpen={openTab === 4}
-                            onClick={() => toggleTab(4)}
-                        />
-                    </ul>
-                    <div className="md:max-w-[45%] w-full md:text-start text-center">
-                        <img src={img} className="w-full" alt="img" />
-                    </div>
+            <div className="w-full max-w-7xl p-5 mx-auto">
+                <h2 className="md:text-4xl text-3xl md:mt-16 mt-8 font-semibold text-[#004aad] text-center md:mb-12 mb-6">Key Features</h2>
+                <div className="grid md:grid-cols-2 gap-4">
+                    {features.map((feature, index) => (
+                        <div key={index} className="md:p-7 p-4 border border-gray-300 rounded-xl myShadow">
+                            <h3 className="text-xl font-semibold">{feature.title}</h3>
+                            <p className="mt-3 text-gray-600">{feature.description}</p>
+                        </div>
+                    ))}
                 </div>
             </div>
-            <div className="flex p-5 justify-center items-start ">
+            <div className="flex p-5 justify-center items-start md:mt-20 mt-10">
                 <div className="w-full max-w-7xl my-1 flex items-center justify-between md:flex-row flex-col-reverse md:gap-10 gap-7">
-                    <div className="md:max-w-[45%] w-full md:text-start text-center">
+                    <div className="md:max-w-[35%] w-full md:text-start text-center">
                         <img src={img2} className="w-full" alt="img" />
                     </div>
                     <ul className="flex md:p-7 flex-col rounded-lg md:max-w-[55%] w-full overflow-hidden">
