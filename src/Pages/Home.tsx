@@ -13,7 +13,7 @@ const Home = () => {
         <div className="max-w-7xl my-5 w-full mx-auto p-5 lg:flex-row flex-col min-h-[calc(100vh-100px)] flex items-center justify-center md:gap-20 gap-14">
           <div className="w-full h-screen absolute top-0 left-0 bg-blue-50 -z-10"></div>
           <div className="lg:max-w-[60%] w-full">
-            <h1 className="font-semibold slidein [--slidein-delay:300ms] opacity-0 capitalize md:text-3xl leading-tight text-lg text-zinc-900">Supercharge Your Front Desk with Omni Agent
+            <h1 className="font-semibold slidein [--slidein-delay:300ms] opacity-0 capitalize md:text-3xl leading-tight text-2xl text-zinc-900">Supercharge Your Front Desk with Omni Agent
               Automate Patient Calls. Reduce Support Costs. Elevate Care.
             </h1>
             <p className="text-zinc-600 md:mt-7 slidein [--slidein-delay:500ms] opacity-0 mt-4">Managing endless patient calls and messages for routine queries drains your team’s time and leads to long wait times, frustrated patients, and staff burnout. Omni Agent changes that.

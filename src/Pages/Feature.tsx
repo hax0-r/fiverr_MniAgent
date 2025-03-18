@@ -1,24 +1,32 @@
 import { useState } from "react";
 import Accordion from "../Components/Accordion"
 import img2 from '../assets/contact.png'
+import { MdSettingsVoice } from "react-icons/md";
+import { GiAutomaticSas } from "react-icons/gi";
+import { RiUserFollowFill } from "react-icons/ri";
+import { MdManageHistory } from "react-icons/md";
 
 const features = [
     {
+        icon: <MdSettingsVoice />,
         title: "Effortless Voice Scheduling",
         description:
             "Omni Agent handles appointment scheduling with AI precision, reducing your team's workload.",
     },
     {
+        icon: <MdManageHistory />,
         title: "Seamless Appointment Management",
         description:
             "Patients can book, reschedule, or cancel appointments anytime, without waiting on hold.",
     },
     {
+        icon: <GiAutomaticSas />,
         title: "Automatic Reminders & No-Show Prevention",
         description:
             "Omni Agent sends voice or text reminders to reduce missed appointments.",
     },
     {
+        icon: <RiUserFollowFill />,
         title: "Post-Visit Follow-Ups",
         description:
             "Schedules follow-ups, shares medication instructions, and collects feedback.",
@@ -49,7 +57,8 @@ const Feature = () => {
                 <div className="grid md:grid-cols-2 gap-4">
                     {features.map((feature, index) => (
                         <div key={index} className="md:p-7 p-4 border border-gray-300 rounded-xl myShadow">
-                            <h3 className="text-xl font-semibold">{feature.title}</h3>
+                            <div className="bg-blue-50 w-14 h-14 flex items-center justify-center text-[#004aad] rounded-lg text-2xl">{feature.icon}</div>
+                            <h3 className="text-xl mt-3 font-semibold">{feature.title}</h3>
                             <p className="mt-3 text-gray-600">{feature.description}</p>
                         </div>
                     ))}
