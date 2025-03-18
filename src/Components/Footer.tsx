@@ -93,7 +93,7 @@ const Footer = () => {
           <div className="py-7 border-t border-gray-200">
             <div className="flex items-center justify-center flex-col lg:justify-between lg:flex-row">
               <span className="text-sm text-gray-500 ">
-                ©<Link to="/">MNI AGENT</Link> 2024, All rights
+                ©<Link to="/">MNI AGENT</Link> 2025, All rights
                 reserved.
               </span>
               <div className="flex mt-4 space-x-4 sm:justify-center lg:mt-0 ">
