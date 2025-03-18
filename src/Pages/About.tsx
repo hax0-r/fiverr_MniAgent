@@ -77,7 +77,25 @@ const About = () => {
                     <p className='md:mt-5 mt-3'>We don’t just build bots. We build bridges — connecting patients and providers like never before.</p>
                 </div>
             </div>
-
+            <div className="flex items-center justify-center flex-col  md:mt-32 mt-14 text-center p-5">
+                <h2 className="md:text-4xl text-3xl font-semibold tracking-tight capitalize text-zinc-800 ">Subscribe to our newsletter</h2>
+                <p className="mt-4 text-lg text-gray-500">
+                    Nostrud amet eu ullamco nisi aute in ad minim nostrud adipisicing velit quis. Duis tempor incididunt
+                    dolore.
+                </p>
+                <form className="mt-6 flex max-w-xl w-full gap-x-2">
+                    <input
+                        id="email-address"
+                        name="email"
+                        type="email"
+                        required
+                        placeholder="Enter your email"
+                        autoComplete="email"
+                        className="border-zinc-300 w-full flex-auto rounded-md border px-3.5 py-2"
+                    />
+                    <button className='bg-[#004aad]  text-white px-7 py-3 font-medium cursor-pointer transition-all duration-500 hover:bg-[#004aad]/80 rounded-lg'>Subscribe</button>
+                </form>
+            </div>
         </div>
     )
 }

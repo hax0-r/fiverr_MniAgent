@@ -41,7 +41,7 @@ const Footer = () => {
                 </li>
                 <li className="mb-6">
                   <Link
-                    to="javascript:;"
+                    to="/about-us"
                     className=" text-gray-600 hover:text-gray-900 transition-all duration-500"
                   >
                     About Us
@@ -49,7 +49,7 @@ const Footer = () => {
                 </li>
                 <li className="mb-6">
                   <Link
-                    to="javascript:;"
+                    to="/features"
                     className=" text-gray-600 hover:text-gray-900 transition-all duration-500"
                   >
                     Features
@@ -57,7 +57,7 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    to="javascript:;"
+                    to="/contact-us"
                     className=" text-gray-600 hover:text-gray-900 transition-all duration-500"
                   >
                     Contact Us
@@ -72,7 +72,7 @@ const Footer = () => {
               <ul className="text-sm  transition-all duration-500">
                 <li className="mb-6">
                   <Link
-                    to="javascript:;"
+                    to="/faq"
                     className="text-gray-600 hover:text-gray-900 transition-all duration-500"
                   >
                     FAQs
@@ -80,7 +80,7 @@ const Footer = () => {
                 </li>
                 <li className="mb-6">
                   <Link
-                    to="javascript:;"
+                    to="#"
                     className=" text-gray-600 hover:text-gray-900 transition-all duration-500"
                   >
                     Privacy Policy

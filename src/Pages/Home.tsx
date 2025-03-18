@@ -111,7 +111,7 @@ const Home = () => {
             Nostrud amet eu ullamco nisi aute in ad minim nostrud adipisicing velit quis. Duis tempor incididunt
             dolore.
           </p>
-          <div className="mt-6 flex max-w-xl w-full gap-x-2">
+          <form className="mt-6 flex max-w-xl w-full gap-x-2">
             <input
               id="email-address"
               name="email"
@@ -122,7 +122,7 @@ const Home = () => {
               className="border-zinc-300 w-full flex-auto rounded-md border px-3.5 py-2"
             />
             <button className='bg-[#004aad]  text-white px-7 py-3 font-medium cursor-pointer transition-all duration-500 hover:bg-[#004aad]/80 rounded-lg'>Subscribe</button>
-          </div>
+          </form>
         </div>
       </div>
     </>
